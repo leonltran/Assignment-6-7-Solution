@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment 6 & 7", "Assignment 6 & 7\Assignment 6 & 7.csproj", "{DB02F4BF-B14C-4EDB-A84D-AD523B16E90D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordHash", "PasswordHash\PasswordHash.csproj", "{30690757-61B8-4236-8D9C-5C7E954519F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB02F4BF-B14C-4EDB-A84D-AD523B16E90D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB02F4BF-B14C-4EDB-A84D-AD523B16E90D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB02F4BF-B14C-4EDB-A84D-AD523B16E90D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB02F4BF-B14C-4EDB-A84D-AD523B16E90D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30690757-61B8-4236-8D9C-5C7E954519F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30690757-61B8-4236-8D9C-5C7E954519F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30690757-61B8-4236-8D9C-5C7E954519F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30690757-61B8-4236-8D9C-5C7E954519F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5042269B-69B1-462E-8596-4C39F1B5213C}
+	EndGlobalSection
+EndGlobal
