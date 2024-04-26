@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Faculty>
+	<Staff>
+		<user>Admin</user>
+		<pass>admin</pass>
+	</Staff>
+	<Staff>
+		<user>TA</user>
+		<pass>Cse44598</pass>
+	</Staff>
+</Faculty>

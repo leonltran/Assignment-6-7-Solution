@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Members>
+  <User>
+    <user>user3</user>
+    <pass>pass3</pass>
+  </User>
+  <User>
+    <user>user1</user>
+    <pass>pass1</pass>
+  </User>
+  <User>
+    <user>user2</user>
+    <pass>pass2</pass>
+  </User>
+</Members>
