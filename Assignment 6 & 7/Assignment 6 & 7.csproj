@@ -115,17 +115,17 @@
     <None Include="Connected Services\Captcha\Service2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\WSDLServices\Service1.disco" />
-    <None Include="Connected Services\WSDLServices\configuration91.svcinfo" />
-    <None Include="Connected Services\WSDLServices\configuration.svcinfo" />
-    <None Include="Connected Services\WSDLServices\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
     <None Include="Connected Services\Captcha\Service.disco" />
     <None Include="Connected Services\Captcha\configuration91.svcinfo" />
     <None Include="Connected Services\Captcha\configuration.svcinfo" />
     <None Include="Connected Services\Captcha\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\WSDLServices\Service1.disco" />
+    <None Include="Connected Services\WSDLServices\configuration91.svcinfo" />
+    <None Include="Connected Services\WSDLServices\configuration.svcinfo" />
+    <None Include="Connected Services\WSDLServices\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

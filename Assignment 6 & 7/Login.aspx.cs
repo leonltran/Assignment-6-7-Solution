@@ -114,7 +114,7 @@ namespace Assignment_6___7
             {
                 if (Session["generatedString"].Equals(TextBox3.Text))
                 {
-                    string fLocation = Path.Combine(Request.PhysicalApplicationPath, @"App_Data\Member.xml");
+                    string fLocation = Path.Combine(Request.PhysicalApplicationPath, @"App_Data\Members.xml");
                     if (File.Exists(fLocation))
                     {
                         FileStream FS = new FileStream(fLocation, FileMode.Open);

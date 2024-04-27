@@ -12,4 +12,8 @@
     <user>user2</user>
     <pass>pass2</pass>
   </User>
+  <Member>
+    <Username>test1</Username>
+    <Password>passtest1</Password>
+  </Member>
 </Members>
