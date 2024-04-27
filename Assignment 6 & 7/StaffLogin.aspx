@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="StaffLogin.aspx.cs" Inherits="Assignment6_WebApplication1.StaffLogin" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="StaffLogin.aspx.cs" Inherits="Assignment_6___7.StaffLogin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 	<main aria-labelledby="title">
       <%--  <h2 id="title"><%: Title %>.</h2> --%>

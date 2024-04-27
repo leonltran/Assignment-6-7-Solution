@@ -11,79 +11,70 @@ namespace Assignment_6___7
 {
 
 
-    public partial class _Default
+    public partial class _Member
     {
 
         /// <summary>
-        /// btnTime control.
+        /// userLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnTime;
+        protected global::System.Web.UI.WebControls.Label userLabel;
 
         /// <summary>
-        /// txtTime control.
+        /// FileUpload1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTime;
+        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
 
         /// <summary>
-        /// txtPass control.
+        /// FileUpload2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPass;
+        protected global::System.Web.UI.WebControls.FileUpload FileUpload2;
 
         /// <summary>
-        /// btnHash control.
+        /// Button2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnHash;
+        protected global::System.Web.UI.WebControls.Button Button2;
 
         /// <summary>
-        /// txtHash control.
+        /// simLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtHash;
+        protected global::System.Web.UI.WebControls.Label simLabel;
 
         /// <summary>
-        /// txtToEncode control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtToEncode;
+        protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// btnEncode control.
+        /// xmlBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEncode;
-
-        /// <summary>
-        /// txtEncoded control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEncoded;
+        protected global::System.Web.UI.WebControls.TextBox xmlBox;
     }
 }

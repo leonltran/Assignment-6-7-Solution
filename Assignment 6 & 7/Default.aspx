@@ -4,63 +4,208 @@
 
     <main>
         <section class="row" aria-labelledby="aspnetTitle">
-            <h1 id="aspnetTitle">A6 Component Table and TryIt Page</h1>
+            <h1 id="aspnetTitle">Default - Assignment 7</h1>
         </section>
 
-                <asp:Table ID="Table1" runat="server"
-                CellPadding="4" 
-                GridLines="Both"
-                HorizontalAlign="Center">
+        <div class="Table">
+			<div class="TableRow">
+				<b>Application and Components Summary Table</b>
+			</div>
+			<div class="TableRow">
+				This page is at <a href="http://webstrar131.fulton.asu.edu/Page10/Default.aspx">http://webstrar131.fulton.asu.edu/Page10/Default.aspx </a>
+			</div>
+			<div class="TableRow">
+				Percentage of contribution: <i>Aeric Plitz: 100%</i>
+			</div>
 
-                <asp:TableRow runat="server">  
-                    <asp:TableCell runat="server" ColumnSpan="4"><b>Application and Components Summary Table</b></asp:TableCell>
-                </asp:TableRow>  
+			<div class="ServiceRow">
+				<div class="ServiceCell ProviderName">
+					Provider Name
+				</div>
+				<div class="ServiceCell Type">
+					Page and component type, e.g., aspx, DLL, SVC, etc.
+				</div>
+				<div class="ServiceCell ComponentDescription">
+					Service Description
+				</div>
+				<div class="ServiceCell ActualResources">
+					Actual resources and methods used to implement the component and where this component is used.
+				</div>
+			</div>
 
-                <asp:TableRow runat="server" BackColor="#CCCCCC">  
-                    <asp:TableCell runat="server"  ColumnSpan="4">The application is deployed at: http://webstrar131.fulton.asu.edu/page5/Default.aspx</asp:TableCell> 
-                </asp:TableRow>  
+			<%--Aeric--%>
+			<div class="ServiceRow">
+				<div class="ServiceCell ProviderName">
+					Aeric Plitz
+				</div>
+				<div class="ServiceCell Type">
+					aspx page
+				</div>
+				<div class="ServiceCell ComponentDescription">
+					The Staff Page
+				</div>
+				<div class="ServiceCell ActualResources">
+					GUI design and C# code behind GUI
+				</div>
+			</div>
 
-                <asp:TableRow runat="server">  
-                    <asp:TableCell runat="server"  ColumnSpan="4">Percentage of contribution: Leon Tran: 100% (individual)
-                    </asp:TableCell>
-                </asp:TableRow>
+			<div class="ServiceRow">
+				<div class="ServiceCell ProviderName">
+					Aeric Plitz
+				</div>
+				<div class="ServiceCell Type">
+					aspx page
+				</div>
+				<div class="ServiceCell ComponentDescription">
+					The Staff Login Page
+				</div>
+				<div class="ServiceCell ActualResources">
+					GUI design and C# code behind GUI, is redirected to if attempting to access Staff.xml without auth
+				</div>
+			</div>
+			
+			<div class="ServiceRow">
+				<div class="ServiceCell ProviderName">
+					Aeric Plitz
+				</div>
+				<div class="ServiceCell Type">
+					XML file
+				</div>
+				<div class="ServiceCell ComponentDescription">
+					The Staff Login Credentials
+				</div>
+				<div class="ServiceCell ActualResources">
+					Linked to Staff Login page
+				</div>
+			</div>
 
-                <asp:TableRow runat="server" BackColor="#CCCCCC">  
-                    <asp:TableCell runat="server" style="width:20%">Provider name</asp:TableCell>
-                    <asp:TableCell runat="server" style="width:20%">Page and component type, e.g., aspx, DLL, SVC, etc.</asp:TableCell>
-                    <asp:TableCell runat="server" style="width:30%">Component description: What does the component do? What are input/parameter and output/return value?</asp:TableCell>
-                    <asp:TableCell runat="server" style="width:30%">Actual resources and methods used to implement the component and where this component is used.</asp:TableCell>
-                </asp:TableRow>
+			<div class="ServiceRow">
+				<div class="ServiceCell ProviderName">
+					Aeric Plitz
+				</div>
+				<div class="ServiceCell Type">
+					XML file
+				</div>
+				<div class="ServiceCell ComponentDescription">
+					Stand-in for Member login credentials
+				</div>
+				<div class="ServiceCell ActualResources">
+					Linked to Staff page to allow for XML file manipulation testing.
+				</div>
+			</div>
+			
+			<div class="ServiceRow">
+				<div class="ServiceCell ProviderName">
+					Aeric Plitz
+				</div>
+				<div class="ServiceCell Type">
+					SVC service(RESTful)
+				</div>
+				<div class="ServiceCell ComponentDescription">
+					Output user/pass from Members xml file
+				</div>
+				<div class="ServiceCell ActualResources">
+					Linked to Staff page
+					For full application it will be edited to not display passwords
+				</div>
+			</div>
+			
+			<div class="ServiceRow">
+				<div class="ServiceCell ProviderName">
+					Aeric Plitz
+				</div>
+				<div class="ServiceCell Type">
+					Cookies
+				</div>
+				<div class="ServiceCell ComponentDescription">
+					Staff Login Cookies
+				</div>
+				<div class="ServiceCell ActualResources">
+					Utilizing persistant as detailed in the slides
+				</div>
+			</div>
 
-                <asp:TableRow runat="server">  
-                    <asp:TableCell runat="server" style="width:20%">Leon Tran</asp:TableCell>
-                    <asp:TableCell runat="server" style="width:20%">Default.aspx</asp:TableCell>
-                    <asp:TableCell runat="server" style="width:30%">Default public page, main website entry point that links to other pages</asp:TableCell>
-                    <asp:TableCell runat="server" style="width:30%">GUI design and C# code</asp:TableCell>
-                </asp:TableRow>
+			
+			<div class="ServiceRow">
+				<div class="ServiceCell ProviderName">
+					Aeric Plitz
+				</div>
+				<div class="ServiceCell Type">
+					XML manipulation
+				</div>
+				<div class="ServiceCell ComponentDescription">
+					Members.xml manipulation(search, add, delete)
+				</div>
+				<div class="ServiceCell ActualResources">
+					C# code behind usage, search, add, and delete are all implemented.
+				</div>
+			</div>
 
-                <asp:TableRow runat="server" BackColor="#CCCCCC">  
-                    <asp:TableCell runat="server" style="width:20%">Leon Tran</asp:TableCell>
-                    <asp:TableCell runat="server" style="width:20%">Global.asax event handler</asp:TableCell>
-                    <asp:TableCell runat="server" style="width:30%">Event handler that fires with every session start. Will eventually be used for session-specific needs</asp:TableCell>
-                    <asp:TableCell runat="server" style="width:30%">Back-end C# codem linked to Default.aspx</asp:TableCell>
-                </asp:TableRow>
+			<%--Leon--%>
+			<div class="ServiceRow">
+				<div class="ServiceCell ProviderName">
+					Leon Tran
+				</div>
+				<div class="ServiceCell Type">
+					Default.aspx
+				</div>
+				<div class="ServiceCell ComponentDescription">
+					Default public page, main website entry point that links to other pages
+				</div>
+				<div class="ServiceCell ActualResources">
+					GUI design and C# code
+				</div>
+			</div>
 
-                <asp:TableRow runat="server">  
-                    <asp:TableCell runat="server" style="width:20%">Leon Tran</asp:TableCell>
-                    <asp:TableCell runat="server" style="width:20%">DLL</asp:TableCell>
-                    <asp:TableCell runat="server" style="width:30%">Password hashing function:<br />Input: string<br />Output: string</asp:TableCell>
-                    <asp:TableCell runat="server" style="width:30%">C# Class Library, added as .dll; will be used to save hashed passwords in XML</asp:TableCell>
-                </asp:TableRow>
+			<div class="ServiceRow">
+				<div class="ServiceCell ProviderName">
+					Leon Tran
+				</div>
+				<div class="ServiceCell Type">
+					Global.asax event handler
+				</div>
+				<div class="ServiceCell ComponentDescription">
+					Event handler that fires with every session start.
+				</div>
+				<div class="ServiceCell ActualResources">
+					Back-end C# code linked to Default.aspx
+				</div>
+			</div>
 
-                <asp:TableRow runat="server" BackColor="#CCCCCC">  
-                    <asp:TableCell runat="server" style="width:20%">Leon Tran</asp:TableCell>
-                    <asp:TableCell runat="server" style="width:20%">SVC Service</asp:TableCell>
-                    <asp:TableCell runat="server" style="width:30%">string TextEncode(string text); Encodes a plaintext string in Base64.</asp:TableCell>
-                    <asp:TableCell runat="server" style="width:30%">C# RESTful Service, used in Default.aspx</asp:TableCell>
-                </asp:TableRow>
+			<div class="ServiceRow">
+				<div class="ServiceCell ProviderName">
+					Leon Tran
+				</div>
+				<div class="ServiceCell Type">
+					Hashing DLL
+				</div>
+				<div class="ServiceCell ComponentDescription">
+					Password hashing function:
+					Input: string
+					Output: string
+				</div>
+				<div class="ServiceCell ActualResources">
+					C# Class Library, added as .dll; will be used to save hashed passwords in XML
+				</div>
+			</div>
 
-            </asp:Table>
+			<div class="ServiceRow">
+				<div class="ServiceCell ProviderName">
+					Leon Tran
+				</div>
+				<div class="ServiceCell Type">
+					SVC Service (RESTful)
+				</div>
+				<div class="ServiceCell ComponentDescription">
+					string TextEncode(string text); Encodes a plaintext string in Base64.
+				</div>
+				<div class="ServiceCell ActualResources">
+					C# RESTful Service, used in Default.aspx
+				</div>
+			</div>
+
+
+		</div>
 
         <br />
 

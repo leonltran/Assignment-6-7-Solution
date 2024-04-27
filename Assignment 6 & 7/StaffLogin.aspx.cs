@@ -7,7 +7,7 @@ using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Assignment6_WebApplication1
+namespace Assignment_6___7
 {
 	public partial class StaffLogin : Page
 	{

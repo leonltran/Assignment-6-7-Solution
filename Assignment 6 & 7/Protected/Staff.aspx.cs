@@ -9,7 +9,7 @@ using System.Xml;
 using System.Xml.Linq;
 using System.Runtime.Serialization;
 
-namespace Assignment6_WebApplication1.Protected
+namespace Assignment_6___7.Protected
 {
 	public partial class Staff : Page
 	{

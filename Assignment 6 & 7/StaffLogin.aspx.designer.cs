@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Assignment6_WebApplication1
+namespace Assignment_6___7
 {
 
 

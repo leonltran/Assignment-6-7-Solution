@@ -1,0 +1,52 @@
+﻿.Table {
+	display: flex;
+	flex-direction: column;
+	border: 5px solid black;
+	flex-wrap: nowrap;
+}
+
+.TableRow {
+	border: 3px solid black;
+}
+
+.ServiceRow {
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	width: 100%;
+}
+
+.ServiceCell {
+	border-left: 3px solid black;
+	border-right: 3px solid black;
+	overflow-wrap: break-word;
+}
+
+
+.ProviderName {
+	flex: 0 0 10%;
+	max-width: 10%;
+}
+
+.Type {
+	flex: 0 0 15%;
+	max-width: 15%;
+}
+
+.TryIt {
+	flex: 0 0 20%;
+	max-width: 20%
+}
+
+.ComponentDescription {
+	flex: 1 1 25%;
+	/*max-width: 25%;*/
+	/*This class will shrink if necessary*/
+}
+
+.ActualResources {
+	flex: 0 0 30%;
+	max-width: 30%;
+}
