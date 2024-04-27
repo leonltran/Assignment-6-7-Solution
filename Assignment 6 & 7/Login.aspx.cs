@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PasswordHash;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -68,7 +69,7 @@ namespace Assignment_6___7
 
             if (Button1.Text == "Login")
             {
-                string fLocation = Path.Combine(Request.PhysicalApplicationPath, @"App_Data\Member.xml");
+                string fLocation = Path.Combine(Request.PhysicalApplicationPath, @"App_Data\Members.xml");
                 if (File.Exists(fLocation))
                 {
                     FileStream FS = new FileStream(fLocation, FileMode.Open);
@@ -76,17 +77,20 @@ namespace Assignment_6___7
                     xd.Load(FS);
                     FS.Close();
 
-                    XmlNodeList members = xd.SelectNodes("//Member");
+                    XmlNodeList users = xd.SelectNodes("//User");
 
-                    foreach (XmlNode member in members)
+                    foreach (XmlNode user in users)
                     {
 
-                        string memberUsername = member.SelectSingleNode("Username").InnerText;
-                        string memberPassword = member.SelectSingleNode("Password").InnerText;
+                        string userUsername = user.SelectSingleNode("Username").InnerText;
+                        string userPassword = user.SelectSingleNode("Password").InnerText;
+                        string userSalt = user.SelectSingleNode("Salt").InnerText;
 
-                        if (memberUsername == username)
+                        password = PassHash.Hash(password, userSalt); // hash password with retrieved salt to compare to stored values
+
+                        if (userUsername == username)
                         {
-                            if (memberPassword == password)
+                            if (userPassword == password)
                             {
                                 HttpCookie cookies = new HttpCookie("loginCookies");
                                 cookies["Username"] = username;
@@ -110,7 +114,8 @@ namespace Assignment_6___7
                     }
                 }
                 return false;
-            } else
+            } 
+            else
             {
                 if (Session["generatedString"].Equals(TextBox3.Text))
                 {
@@ -122,17 +127,17 @@ namespace Assignment_6___7
                         xd.Load(FS);
                         FS.Close();
 
-                        XmlNodeList members = xd.SelectNodes("//Member");
+                        XmlNodeList users = xd.SelectNodes("//User");
 
-                        foreach (XmlNode member in members)
+                        foreach (XmlNode user in users)
                         {
 
-                            string memberUsername = member.SelectSingleNode("Username").InnerText;
-                            string memberPassword = member.SelectSingleNode("Password").InnerText;
+                            string userUsername = user.SelectSingleNode("Username").InnerText;
+                            string userPassword = user.SelectSingleNode("Password").InnerText;
 
-                            if (memberUsername == username)
+                            if (userUsername == username)
                             {
-                                if (memberPassword == password)
+                                if (userPassword == password)
                                 {
                                     errLabel.Text = "Account exists, please login.";
                                     return false;
@@ -141,18 +146,36 @@ namespace Assignment_6___7
                         }
 
                         XmlNode root = xd.DocumentElement;
-                        XmlNode newMember = xd.CreateElement("Member");
+                        XmlNode newUser = xd.CreateElement("User");
 
                         XmlNode newUsername = xd.CreateElement("Username");
                         newUsername.InnerText = username;
-                        newMember.AppendChild(newUsername);
+                        newUser.AppendChild(newUsername);
+
+                        // generate salt
+                        // https://stackoverflow.com/questions/1344221/how-can-i-generate-random-alphanumeric-strings
+                        var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+                        var stringChars = new char[16];
+                        var random = new Random();
+                        for (int i = 0; i < stringChars.Length; i++)
+                        {
+                            stringChars[i] = chars[random.Next(chars.Length)];
+                        }
+                        var salt = new String(stringChars);
+
 
                         XmlNode newPassword = xd.CreateElement("Password");
-                        newPassword.InnerText = password;
-                        newMember.AppendChild(newPassword);
+                        newPassword.InnerText = PassHash.Hash(password, salt);
+                        newUser.AppendChild(newPassword);
 
-                        root.AppendChild(newMember);
+                        XmlNode newSalt = xd.CreateElement("Salt");
+                        newSalt.InnerText = salt;
+                        newUser.AppendChild(newSalt);
+
+                        root.AppendChild(newUser);
                         xd.Save(fLocation);
+
+                        
 
                         HttpCookie cookies = new HttpCookie("loginCookies");
                         cookies["Username"] = username;

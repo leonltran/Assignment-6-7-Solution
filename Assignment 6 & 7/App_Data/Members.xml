@@ -1,19 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Members>
   <User>
-    <user>user3</user>
-    <pass>pass3</pass>
+    <Username>aaa</Username>
+    <Password>Mva297VxYQp7+Ef6T+hq0uiG261RWEYu7mTgr1hZWgemM7ybL/nLDy+TbW1NeyV5Gj1li8gaQ7knQvDRN1gDoA==</Password>
+    <Salt>3JH14TyNeIAyjaYZ</Salt>
   </User>
-  <User>
-    <user>user1</user>
-    <pass>pass1</pass>
-  </User>
-  <User>
-    <user>user2</user>
-    <pass>pass2</pass>
-  </User>
-  <Member>
-    <Username>test1</Username>
-    <Password>passtest1</Password>
-  </Member>
 </Members>
