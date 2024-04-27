@@ -15,7 +15,7 @@
 				This page is at <a href="http://webstrar131.fulton.asu.edu/Page10/Default.aspx">http://webstrar131.fulton.asu.edu/Page10/Default.aspx </a>
 			</div>
 			<div class="TableRow">
-				Percentage of contribution: <i>Aeric Plitz: 100%</i>
+				Percentage of contribution: <i>Aeric Plitz: 33.3%, Jackson Rhea: 33.3%, Leon Tran 33.3%</i>
 			</div>
 
 			<div class="ServiceRow">
@@ -41,6 +41,9 @@
 				<div class="ServiceCell Type">
 					aspx page
 				</div>
+				<div class="ServiceCell TryIt">
+					<a href="http://webstrar131.fulton.asu.edu/Page10/Protected/Staff.aspx">Try It</a>
+				</div>
 				<div class="ServiceCell ComponentDescription">
 					The Staff Page
 				</div>
@@ -55,6 +58,9 @@
 				</div>
 				<div class="ServiceCell Type">
 					aspx page
+				</div>
+				<div class="ServiceCell TryIt">
+					<a href="http://webstrar131.fulton.asu.edu/Page10/StaffLogin.aspx">Try It </a>
 				</div>
 				<div class="ServiceCell ComponentDescription">
 					The Staff Login Page
@@ -71,6 +77,9 @@
 				<div class="ServiceCell Type">
 					XML file
 				</div>
+				<div class="ServiceCell TryIt">
+					<a href="http://webstrar131.fulton.asu.edu/Page10/App_Data/Staff.xml">Try It </a>
+				</div>
 				<div class="ServiceCell ComponentDescription">
 					The Staff Login Credentials
 				</div>
@@ -86,6 +95,9 @@
 				<div class="ServiceCell Type">
 					XML file
 				</div>
+				<div class="ServiceCell TryIt">
+					<a href="http://webstrar131.fulton.asu.edu/Page10/App_Data/Members.xml">Try It </a>
+				</div>
 				<div class="ServiceCell ComponentDescription">
 					Stand-in for Member login credentials
 				</div>
@@ -100,6 +112,9 @@
 				</div>
 				<div class="ServiceCell Type">
 					SVC service(RESTful)
+				</div>
+				<div class="ServiceCell TryIt">
+					<a href="http://webstrar131.fulton.asu.edu/Page10/Protected/Staff.aspx">Try It</a>
 				</div>
 				<div class="ServiceCell ComponentDescription">
 					Output user/pass from Members xml file
@@ -117,6 +132,9 @@
 				<div class="ServiceCell Type">
 					Cookies
 				</div>
+				<div class="ServiceCell TryIt">
+					<a href="http://webstrar131.fulton.asu.edu/Page10/Protected/Staff.aspx">Try It</a>
+				</div>
 				<div class="ServiceCell ComponentDescription">
 					Staff Login Cookies
 				</div>
@@ -133,11 +151,123 @@
 				<div class="ServiceCell Type">
 					XML manipulation
 				</div>
+				<div class="ServiceCell TryIt">
+					<a href="http://webstrar131.fulton.asu.edu/Page10/Protected/Staff.aspx">Try It</a>
+				</div>
 				<div class="ServiceCell ComponentDescription">
 					Members.xml manipulation(search, add, delete)
 				</div>
 				<div class="ServiceCell ActualResources">
 					C# code behind usage, search, add, and delete are all implemented.
+				</div>
+			</div>
+
+			<%--Jackson--%>
+			<div class="ServiceRow">
+				<div class="ServiceCell ProviderName">
+					Jackson Rhea
+				</div>
+				<div class="ServiceCell Type">
+					aspx page
+				</div>
+				<div class="ServiceCell TryIt">
+					<a href="http://webstrar131.fulton.asu.edu/Page10/Login.aspx">Try It </a>
+				</div>
+				<div class="ServiceCell ComponentDescription">
+					The Login Page (Has signup option)
+				</div>
+				<div class="ServiceCell ActualResources">
+					GUI design and C# code behind GUI
+				</div>
+			</div>
+
+			<div class="ServiceRow">
+				<div class="ServiceCell ProviderName">
+					Jackson Rhea
+				</div>
+				<div class="ServiceCell Type">
+					aspx page
+				</div>
+				<div class="ServiceCell TryIt">
+					<a href="http://webstrar131.fulton.asu.edu/Page10/SiteMember/Member.aspx">Try It </a>
+				</div>
+				<div class="ServiceCell ComponentDescription">
+					The Member Page (Contains Service)
+				</div>
+				<div class="ServiceCell ActualResources">
+					GUI design, C# code behind it, should be redirected if not logged in via cookies
+				</div>
+			</div>
+			
+			<div class="ServiceRow">
+				<div class="ServiceCell ProviderName">
+					Jackson Rhea
+				</div>
+				<div class="ServiceCell Type">
+					Members.xml file
+				</div>
+				<div class="ServiceCell TryIt">
+					<a href="http://webstrar131.fulton.asu.edu/Page10/SiteMember/Member.aspx">Try It </a>
+				</div>
+				<div class="ServiceCell ComponentDescription">
+					To view xml file I put it on the member page, will be able to see it update with each signup
+				</div>
+				<div class="ServiceCell ActualResources">
+					Textbox containing entire member.xml file
+				</div>
+			</div>
+
+			<div class="ServiceRow">
+				<div class="ServiceCell ProviderName">
+					Jackson Rhea
+				</div>
+				<div class="ServiceCell Type">
+					Captcha
+				</div>
+				<div class="ServiceCell TryIt">
+					<a href="http://webstrar131.fulton.asu.edu/Page10/Login.aspx">Try It </a>
+				</div>
+				<div class="ServiceCell ComponentDescription">
+					In signup option there will be a captcha that needs to be completed
+				</div>
+				<div class="ServiceCell ActualResources">
+					Links to login page to show captcha (must click signup)
+				</div>
+			</div>
+			
+			<div class="ServiceRow">
+				<div class="ServiceCell ProviderName">
+					Jackson Rhea
+				</div>
+				<div class="ServiceCell Type">
+					SVC service WSDL
+				</div>
+				<div class="ServiceCell TryIt">
+					<a href="http://webstrar131.fulton.asu.edu/Page7/Service1.svc">Try It </a>
+				</div>
+				<div class="ServiceCell ComponentDescription">
+					Compare two text files and get similarity score between them
+				</div>
+				<div class="ServiceCell ActualResources">
+					Linked to Member page
+				</div>
+			</div>
+			
+			<div class="ServiceRow">
+				<div class="ServiceCell ProviderName">
+					Jackson Rhea
+				</div>
+				<div class="ServiceCell Type">
+					Cookies
+				</div>
+				<div class="ServiceCell TryIt">
+					<a href="http://webstrar131.fulton.asu.edu/Page10/Login.aspx">Try It </a>
+				</div>
+				<div class="ServiceCell ComponentDescription">
+					Member Login Cookies
+				</div>
+				<div class="ServiceCell ActualResources">
+					Utilizing persistant via slide info
 				</div>
 			</div>
 
@@ -148,6 +278,9 @@
 				</div>
 				<div class="ServiceCell Type">
 					Default.aspx
+				</div>
+				<div class="ServiceCell TryIt">
+					You are here!
 				</div>
 				<div class="ServiceCell ComponentDescription">
 					Default public page, main website entry point that links to other pages
@@ -164,6 +297,9 @@
 				<div class="ServiceCell Type">
 					Global.asax event handler
 				</div>
+				<div class="ServiceCell TryIt">
+				You are here!
+				</div>
 				<div class="ServiceCell ComponentDescription">
 					Event handler that fires with every session start.
 				</div>
@@ -178,6 +314,9 @@
 				</div>
 				<div class="ServiceCell Type">
 					Hashing DLL
+				</div>
+				<div class="ServiceCell TryIt">
+				You are here!
 				</div>
 				<div class="ServiceCell ComponentDescription">
 					Password hashing function:
@@ -195,6 +334,9 @@
 				</div>
 				<div class="ServiceCell Type">
 					SVC Service (RESTful)
+				</div>
+				<div class="ServiceCell TryIt">
+				You are here!
 				</div>
 				<div class="ServiceCell ComponentDescription">
 					string TextEncode(string text); Encodes a plaintext string in Base64.

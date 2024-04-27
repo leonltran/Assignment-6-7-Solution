@@ -19,7 +19,9 @@ namespace Assignment_6___7
 		protected void Login(object sender, EventArgs e)
 		{
 			if (LoginAuth(UserNameInput.Text, PasswordInput.Text))
-				FormsAuthentication.RedirectFromLoginPage(UserNameInput.Text, Persistent.Checked); //cookie
+			{
+                FormsAuthentication.RedirectFromLoginPage(UserNameInput.Text, Persistent.Checked); //cookie
+            }
 			else
 				Output.Text = "Username or Password is incorrect.";
 		}

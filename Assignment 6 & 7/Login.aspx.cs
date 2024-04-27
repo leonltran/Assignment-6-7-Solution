@@ -183,7 +183,7 @@ namespace Assignment_6___7
                         cookies.Expires = DateTime.Now.AddMonths(6);
                         Response.Cookies.Add(cookies);
 
-                        Response.Redirect("Member.aspx");
+                        Response.Redirect("~/SiteMember/Member.aspx");
 
                     }
                     return false;
